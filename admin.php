@@ -16,8 +16,8 @@ include 'templates/header.php';
 <body>
 	<?php 
 
-	$_SESSION['name']='gustavo';
-	if ($_SESSION['name'] == 'gustavo'){
+	$_SESSION['level']='gustavo';
+	if ($_SESSION['level'] == 'gustavo'){
 		echo 'logueado';
 
 	}else{

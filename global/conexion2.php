@@ -1,4 +1,5 @@
 <?php
+include('config.php');
 
 $baseUser= USUARIO;
 $host = SERVIDOR;
