@@ -1,48 +1,12 @@
-
-
-.index-separador{
-	min-height: 40px;
-	width: 100%;
+.info-index´{
+	float: left;
+}
+.div-index img{
+	display: inline;
+}
+.separador{
 	background-color: orange;
 	color: white;
+	min-height: 50px;
 	text-align: center;
-	font-size: 2em;
-	font-weight: bolder;
-}
-
-.index-table{
-	padding: 10px;
-	margin: 5px;
-
-}
-.index-table td{
-	margin: 5px;
-}
-.index-table tr td div img{
-	width: 230px;
-	border: 0;
-}
-.div-foto{
-	min-width: 230px;
-	background-color: #ebf1ff;
-	
-	min-height: 230px;
-}
-
-.div-descripcion{
-	max-width: 200px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 8px;
-	font-size: 1.2em;
-	font-weight: bold;
-	text-align: center;
-
-}
-.front-page-foto{
-	padding-left: 50px;
-
-}
-.front-logo{
-	padding-left: 50px;
 }
