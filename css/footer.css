@@ -1,0 +1,32 @@
+.footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ffaa33;
+   color: white;
+   
+   min-height: 210px;
+}
+.table-footer{
+	padding-left: 60%;
+	padding-top: 40px;
+	font-weight: bold;
+}
+.col{
+	padding-left: 50px;
+}
+a{
+	text-decoration-line: none;
+	text-decoration-color: white;
+	color: white;
+}
+
+.logo-footer{
+	position: absolute;
+	padding: 30px 90px;
+}
+.datos-contacto{
+	position: absolute;
+	padding-left: 30%;
+}
