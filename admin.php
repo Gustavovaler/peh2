@@ -3,16 +3,32 @@ include 'global/config.php';
 include 'global/conexion.php';
 include 'carrito.php';
 include 'templates/header.php';
+
+
+
 ?>
 <br>
 <br>
 <br>
 
 
-<head>
-	<title>Administrador</title>
-</head>
+
 <body>
+	<?php 
+
+	$_SESSION['name']='gustavo';
+	if ($_SESSION['name'] == 'gustavo'){
+		echo 'logueado';
+
+	}else{
+		header('Location: login.php');
+	}
+	
+
+
+
+
+?>
 	<table class="table table-bordered">
 		<tr>
          <td width="10%">
