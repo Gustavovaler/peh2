@@ -26,6 +26,19 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="contacto.php">Contacto</a>
 				</li>
+				<li>
+							<div class="dropdown">
+				  <button onclick="myFunction()" class="dropbtn">Productos</button>
+				  <div id="myDropdown" class="dropdown-content">
+				    <a href="#">Camisetas</a>
+				    <a href="#">Conjuntos</a>
+				    <a href="#">Camperas</a>
+				    <a href="#">Shorts</a>
+				    <a href="#">Accsesorios</a>
+				    <a href="#">Otros</a>
+				  </div>
+				</div>
+								</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="mostrarCarrito.php">Carrito(<?php
 						echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
@@ -40,7 +53,24 @@
 
 	</nav>
 	<br>
+	<script type="text/javascript">
 
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
 
 	<div class="container">
