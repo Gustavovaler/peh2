@@ -5,13 +5,16 @@ include 'carrito.php';
 include 'templates/header.php';
 ?>
         <link rel="stylesheet" type="text/css" href="css/index.css">
+
+<?php if(isset($_SESSION['CARRITO'])){ ?>
 		<br>
 		<div class="alert alert-success">
 			<?php echo ($mensaje);?>
 			<a href="mostrarCarrito.php" class="badge badge-success">Ver carrito de compras</a>
-			
-
 		</div>
+
+		<?php } ?>
+
 		<div class="div-index">
 			<img src="archivos/paraelhinchalogo.png" width="30%" class="logo-index">
 			<img src="archivos/front-page.png" width="65%" class="info-index">
