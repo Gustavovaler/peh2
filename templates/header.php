@@ -30,12 +30,15 @@
 							<div class="dropdown">
 				  <button onclick="myFunction()" class="dropbtn">Productos</button>
 				  <div id="myDropdown" class="dropdown-content">
-				    <a href="#">Camisetas</a>
-				    <a href="#">Conjuntos</a>
-				    <a href="#">Camperas</a>
-				    <a href="#">Shorts</a>
-				    <a href="#">Accsesorios</a>
-				    <a href="#">Otros</a>
+				  	<form action="categoria.php" method="POST">
+				    <input type="submit" name="categoria" value="Camisetas" class="btn-lin">
+				    <input type="submit" name="categoria" value="Conjuntos" class="btn-lin">
+				    <input type="submit" name="categoria" value="Camperas" class="btn-lin">
+				    <input type="submit" name="categoria" value="Pantalones" class="btn-lin">
+				    <input type="submit" name="categoria" value="Shorts" class="btn-lin">
+				    <input type="submit" name="categoria" value="Accesorios" class="btn-lin">
+				    <input type="submit" name="categoria" value="Otros" class="btn-lin">
+				    </form>
 				  </div>
 				</div>
 								</li>
