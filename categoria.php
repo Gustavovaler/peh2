@@ -21,15 +21,23 @@ include 'templates/header.php';
 
 		<div class="row">
 			<?php
-			
-			$categoria=$_POST['categoria'];
-			
-
-
-			
-			$sentencia=$pdo->prepare("SELECT * FROM peh_tblproductos WHERE categoria='$categoria'");
+			if ($_POST['categoria']){
+				$categoria=$_POST['categoria'];
+				$sentencia=$pdo->prepare("SELECT * FROM peh_tblproductos WHERE categoria='$categoria'");
 			$sentencia->execute();
 			$listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+			
+			
+			}else{
+				
+				$sentencia=$pdo->prepare("SELECT * FROM peh_tblproductos WHERE categoria='$categoria'");
+			$sentencia->execute();
+			$listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+			}
+
+
+			
+			
 			
 			
 			$cont=0;
@@ -55,7 +63,7 @@ include 'templates/header.php';
 					<input type="hidden" name="foto" value="<?php echo $producto['foto'];?>" >
 					<input type="hidden" name="articulo" value="<?php echo $producto['articulo'];?>" >
 					<input type="hidden" name="precio" value="<?php echo $producto['precio'];?>" >
-					
+					<input type="hidden" name="categoria" value="<?php echo $categoria;?>" >
 					<input type="tetxt" name="cantidad" placeholder="1" maxlength="2" value="" >
 
 					<button class="btn btn-primary"	name="btnAccion" value="Comprar" type="submit">Agregar al carrito</button>	
@@ -68,6 +76,7 @@ include 'templates/header.php';
 			if ($cont==8) {
 				break;
 			}
+
 
 			 }	?>
 		</div>
