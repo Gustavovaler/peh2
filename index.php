@@ -26,7 +26,7 @@ include 'templates/header.php';
 
 		<div class="row">
 			<?php
-			$sentencia=$pdo->prepare("SELECT * FROM tblproductos");
+			$sentencia=$pdo->prepare("SELECT * FROM peh_tblproductos");
 			$sentencia->execute();
 			$listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 			

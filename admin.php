@@ -56,7 +56,7 @@ include 'templates/header.php';
 			<th width="5%">Borrar</th>
 		</tr>
 			<?php
-			$sentencia=$pdo->prepare("SELECT * FROM tblproductos");
+			$sentencia=$pdo->prepare("SELECT * FROM peh_tblproductos");
 			$sentencia->execute();
 			$listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 			

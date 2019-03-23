@@ -2,7 +2,7 @@
 require("header.php");
 require("scripts/conexion.php");
 
-$sql = 'SELECT * FROM productos WHERE id="'.$_REQUEST["id"].'"';
+$sql = 'SELECT * FROM peh_tblproductos WHERE id="'.$_REQUEST["id"].'"';
 
 $resultado = mysqli_query($conn,$sql);
 

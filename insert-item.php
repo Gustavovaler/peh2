@@ -9,6 +9,8 @@ include 'templates/header.php';
 <br>
 <form action="insert.php" method="POST" enctype="multipart/form-data">
 	<div class="form-group">
+	<label class="">Categoria</label><br>
+	<input type="text" name="categoria" class="form-control" placeholder="Hata 100 caracteres."><br>	
 	<label class="">Articulo</label><br>
 	<input type="text" name="articulo" class="form-control" placeholder="Hata 100 caracteres."><br>
 	<label class="">Descripcion</label><br>

@@ -53,3 +53,7 @@
   background-color: orange;
   color: red;
 }
+
+.separador{
+  min-height: 100px;
+}
