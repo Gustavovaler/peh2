@@ -1,10 +1,4 @@
-<?php
-echo $_POST['categoria'];
 
-
-
-
-?>
 
 
 <?php
@@ -27,11 +21,13 @@ include 'templates/header.php';
 
 		<div class="row">
 			<?php
-			$sentencia=$pdo->prepare("SELECT * FROM peh_tblproductos WHERE categoria='".$_POST['categoria']."'");
+			$categoria=$_POST['categoria'];
+			$sentencia=$pdo->prepare("SELECT * FROM peh_tblproductos WHERE categoria='".$categoria."'");
 			$sentencia->execute();
 			$listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
 			
 			?>
+
 			<?php
 			$cont=0;
 			foreach($listaProductos as $producto){ ?>
@@ -50,11 +46,14 @@ include 'templates/header.php';
 					<p class="card-text"><?php echo $producto['articulo'];?></p>
 					<form action="" method="POST">
 
+
 					<input type="hidden" name="ID" value="<?php echo $producto['ID'];?>" >
 					<input type="hidden" name="descripcion" value="<?php echo $producto['descripcion'];?>" >
 					<input type="hidden" name="foto" value="<?php echo $producto['foto'];?>" >
 					<input type="hidden" name="articulo" value="<?php echo $producto['articulo'];?>" >
 					<input type="hidden" name="precio" value="<?php echo $producto['precio'];?>" >
+					<input type="hidden" name="precio" value="<?php echo $producto['categoria'];?>" >
+					<?php $categoria; ?>
 					<input type="tetxt" name="cantidad" placeholder="1" maxlength="2" value="" >
 
 					<button class="btn btn-primary"	name="btnAccion" value="Comprar" type="submit">Agregar al carrito</button>	
