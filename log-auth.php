@@ -10,6 +10,7 @@ if (mysqli_num_rows($resultado)==1){
 	session_start();
 	$_SESSION['nombre']= $row['nombre'];
 	header("location:index.php");
+	
 }else{
 	echo 'no hay usuario';
 }

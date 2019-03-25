@@ -3,10 +3,10 @@
   # Crear un boton de pago a partir de una preferencia con atributos requeridos minimos
   require 'vendor/autoload.php';
 
-$precio = '150.00';
+$precio = $_POST['precio'];
 $concepto = 'compra simple';
-$regreso = 'http://localhost/peh/index.php';
-$cancelado = 'http://localhost/peh/contacto.php';
+$regreso = 'http://localhost/peh2/index.php';
+$cancelado = 'http://localhost/peh2/contacto.php';
 $final_price = $precio;
   
 $mp = new MP('7064411867690821','cB5MXjRCy4vMCKQRk5SlNoMiuRajWskl');

@@ -38,13 +38,13 @@ include 'templates/header.php';
 
 			<div class="col-3">
 
-				<img src="<?php echo $producto['foto'];?>"  
+				<a href="item.php?id=<?php echo $producto['ID']?>"> <img src="<?php echo $producto['foto'];?>"  
 				class="card-img-top"
 				 title="<?php echo $producto['articulo'];?>" 
 				 alt="Titulo" 
 				 data-toggle="popover"
 				 data-content="<?php echo $producto['descripcion'];?>" 
-				 data-trigger="hover" >
+				 data-trigger="hover" ></a>
 					<div class="card-body">
 					<h5 class="card-title">$ <?php echo $producto['precio'];?></h5>
 					<p class="card-text"><?php echo $producto['articulo'];?></p>

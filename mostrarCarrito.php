@@ -55,6 +55,7 @@ if (!empty($_SESSION['CARRITO'])) {?>
 	
 </table>
 <form action="bot.php" method="POST">
+	<input type="hidden" name="precio" value="<?php echo $total;?>">
 	<input type="submit" name="enviar" value="Elegir medio de pago">
 	
 </form>
