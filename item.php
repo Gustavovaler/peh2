@@ -1,5 +1,5 @@
 <?php
-require("header.php");
+require("templates/header.php");
 require("scripts/conexion.php");
 
 $sql = 'SELECT * FROM peh_tblproductos WHERE id="'.$_REQUEST["id"].'"';
@@ -13,7 +13,7 @@ $row=mysqli_fetch_array($resultado);
 <link rel="stylesheet" type="text/css" href="css/item.css">
 <div class="container">
 	<div class="image">
-		 <img src='imagenes/<?php echo $row['nombre_foto'] ;?>'>
+		 <img src='<?php echo $row['foto'] ;?>'>
 		
 	</div>
 	
@@ -22,8 +22,7 @@ $row=mysqli_fetch_array($resultado);
 <?php
 
 echo "<table >
-<tr><td ><img src='imagenes/".$row['nombre_foto']."' width='70'><td>".$row["descripcion"]."</td><td>".$row['talle']."</td><td>".$row['color']."</td><td>".$row['nro_art']."</td><td>".$row['jugador']."</td><td>".$row['precio']."</td><td>".$row['cantidad']."
-</tr></table>";
+<tr><td ><img src='".$row['foto']."' width='70'><td>".$row["descripcion"]."</td><td>".$row['talle']."</td><td>".$row['categoria']."</td><td>".$row['articulo']."</td><td></td><td>".$row['precio']."</td><td></tr></table>";
 ?>
 
 
