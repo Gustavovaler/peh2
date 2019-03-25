@@ -81,6 +81,11 @@ include 'templates/header.php';
 
 			<form action="pre-edit.php" method="POST">
 				<input type="hidden" name="id" value="<?php echo $producto['ID']?>">
+				<input type="hidden" name="foto" value="<?php echo $producto['foto']?>">
+				<input type="hidden" name="categoria" value="<?php echo $producto['categoria']?>">
+				<input type="hidden" name="articulo" value="<?php echo $producto['articulo']?>">
+				<input type="hidden" name="descripcion" value="<?php echo $producto['descripcion']?>">
+				<input type="hidden" name="precio" value="<?php echo $producto['precio']?>">
 				<button class="btn btn-secondary" type="submit"
 			name="btnAccion" value="eliminar">Editar</button>
              </form>
