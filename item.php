@@ -1,6 +1,7 @@
 <?php
+require("global/config.php");
 require("templates/header.php");
-require("scripts/conexion.php");
+require("global/conexion2.php");
 
 $sql = 'SELECT * FROM peh_tblproductos WHERE id="'.$_REQUEST["id"].'"';
 
