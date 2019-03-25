@@ -14,6 +14,7 @@ include 'templates/header.php';
 		</div>
 
 		<?php } ?>
+		<div class="separador2"></div>
 
 		<div class="div-index">
 			<img src="archivos/paraelhinchalogo.png" width="30%" class="logo-index">
