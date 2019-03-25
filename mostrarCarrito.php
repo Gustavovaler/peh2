@@ -54,11 +54,15 @@ if (!empty($_SESSION['CARRITO'])) {?>
 	</tbody>
 	
 </table>
+<div class="pagar-btn">
 <form action="bot.php" method="POST">
 	<input type="hidden" name="precio" value="<?php echo $total;?>">
-	<input type="submit" name="enviar" value="Elegir medio de pago">
+	
+			<button class="btn btn-success" type="submit"
+			name="btnAccion" value="checkout">Comprar</button>
 	
 </form>
+</div>
 
 <?php } 
 else{?>
@@ -70,6 +74,7 @@ else{?>
 
 ?>
 
+</div>
 
 
 <?php

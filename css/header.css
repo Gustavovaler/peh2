@@ -57,3 +57,14 @@
 .separador{
   min-height: 100px;
 }
+.pagar-btn{
+  margin:30px;
+  padding: 10px;
+  padding-left:80%;
+  
+  overflow: hidden;
+  position: relative;
+}
+.pagar-btn button{
+  font-size: 2em;
+}
