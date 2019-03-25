@@ -54,6 +54,10 @@ if (!empty($_SESSION['CARRITO'])) {?>
 	</tbody>
 	
 </table>
+<form action="bot.php" method="POST">
+	<input type="submit" name="enviar" value="Elegir medio de pago">
+	
+</form>
 
 <?php } 
 else{?>
