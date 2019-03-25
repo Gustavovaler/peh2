@@ -6,8 +6,8 @@
 	background-color: #fefefe;
 
 }
-.image img{
-	width: 500px;
-	align-content: center;
+..img-fluid{
+max-width: 100%;
+height: auto;
 
-}
+	} 
