@@ -49,8 +49,9 @@ include 'templates/header.php';
 <table class="table table-bordered">
 	<tbody>
 		<tr>
-			<th width="20%">Articulo</th>
-			<th width="40%">Descripcion</th>
+			<th width="8%">Foto</th>
+			<th width="14%">Articulo</th>
+			<th width="35%">Descripcion</th>
 			<th width="12%">Precio</th>
 			<th width="3">Editar</th>
 			<th width="5%">Borrar</th>
@@ -68,8 +69,11 @@ include 'templates/header.php';
 			$contador++; ?>
 			
 		<tr>
-		 <td width="20%"><?php echo $producto['articulo']?></td>
-			<td width="40%"><?php echo $producto['descripcion']?></td>
+			<td >
+			<img src="<?php echo $producto['foto'];?>" width="50px"></td>
+		 <td width="10%"><?php echo $producto['articulo']?></td>
+		  
+			<td width="35%"><?php echo $producto['descripcion']?></td>
 			<td width="12%"><?php echo $producto['precio']?></td>
 			
 			

@@ -6,7 +6,7 @@ include 'global/conexion2.php';
 echo $_POST['id'];
 
 
-$sql2="DELETE FROM tblproductos WHERE ID=".$_POST['id']."";
+$sql2="DELETE FROM peh_tblproductos WHERE ID=".$_POST['id']."";
 
 
 
