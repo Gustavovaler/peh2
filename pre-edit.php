@@ -12,6 +12,8 @@ include 'templates/header.php';
 ?>
 <form action="edit-item.php" method="POST" enctype="multipart/form-data">
 	<div class="form-group">
+	<label>Categoria</label><br>
+	<input type="text" name="categoria" placeholder="<?php echo $_POST['categoria']?>" class="form-control"><br>
 	<label class="">Articulo</label><br>
 	<input type="text" name="articulo" class="form-control" placeholder="<?php echo $_POST['articulo']?>"><br>
 	<label class="">Descripcion</label><br>

@@ -2,6 +2,7 @@
 include 'global/config.php';
 include 'global/conexion2.php';
 
+$categoria=$_POST['categoria'];
 $articulo=$_POST['articulo'];
 $descripcion=$_POST['descripcion'];
 $precio=$_POST['precio'];
@@ -11,7 +12,7 @@ $id=$_POST['id'];
 
 
 
-$sql2="UPDATE tblproductos SET articulo='$articulo', descripcion='$descripcion', precio='$precio',foto='archivos/$foto'  WHERE ID='$id' ";
+$sql2="UPDATE peh_tblproductos SET categoria='$categoria' , articulo='$articulo', descripcion='$descripcion', precio='$precio',foto='archivos/$foto'  WHERE ID='$id' ";
 
 
 
