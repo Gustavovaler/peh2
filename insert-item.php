@@ -10,7 +10,16 @@ include 'templates/header.php';
 <form action="insert.php" method="POST" enctype="multipart/form-data">
 	<div class="form-group">
 	<label class="">Categoria</label><br>
-	<input type="text" name="categoria" class="form-control" placeholder="Hata 100 caracteres."><br>	
+	<select name="categoria">
+	 <option value="Pantalones" >Pantalones</option>
+						  <option value="Shorts">Shorts</option>
+						  <option value="Camisetas">Camisetas</option>
+						  <option value="Conjuntos">Conjuntos</option>
+						  <option value="Camperas">Camperas</option>
+						  <option value="Accesorios">Accesorios</option>
+						  <option value="Otros">Otros</option>
+						</select><br>
+
 	<label class="">Articulo</label><br>
 	<input type="text" name="articulo" class="form-control" placeholder="Hata 100 caracteres."><br>
 	<label class="">Descripcion</label><br>
