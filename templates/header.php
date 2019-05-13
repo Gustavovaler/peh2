@@ -50,29 +50,7 @@
 
 						?>)</a>
 				</li>
-				<?php
-				session_start();
 				
-				if (!$_SESSION['nombre']) {?>
-					
-					<li class="nav-item active">
-
-					<a href="login.php" class="nav-link">Ingresar</a>					
-				</li>
-				<?php } ?>
-				<?php
-				if ($_SESSION['nombre']) {?>
-				<li class="nav-item active">
-					<a href="logout.php" class="nav-link">Salir</a>
-					
-				</li>
-				<li class="nav-item active">
-					<a href="#" class="nav-link"> Bienvenido <?php echo $_SESSION['nombre']; ?></a>
-				</li>
-
-					<?php
-				}
-				?>
 				
 			</ul>
 			

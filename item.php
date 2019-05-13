@@ -20,25 +20,10 @@ $row=$producto;
 <div class="container">
 	<div class="image">
 		  <img src="<?php echo $producto['foto'] ;?>" class="img-fluid" alt="Responsive image">
-
-
-
-
-
-
-
- 
 		
 	</div>
 	
 </div>
-
-
-
-
-
-
-
 
 <form action="" method="POST">
 
