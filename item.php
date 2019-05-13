@@ -3,15 +3,10 @@
 require("templates/header.php");
 require("global/conexion2.php");
 include 'carrito.php';
-
 $sql = 'SELECT * FROM peh_tblproductos WHERE id="'.$_REQUEST["id"].'"';
-
 $resultado = mysqli_query($conn,$sql);
-
 $producto=mysqli_fetch_array($resultado);
 $row=$producto;
-
-
 ?>
 <link rel="stylesheet" type="text/css" href="css/item.css">
 <form action="categoria.php" method="POST">
